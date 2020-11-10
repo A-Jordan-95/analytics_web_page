@@ -6,8 +6,59 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <a href="localhost:3000/regionlist">Region Data</a>
-    <a href="localhost:3000/opsyslist">Operating system Data</a>
-    <a href="localhost:3000/uniquevisitors">Overall Unique visitors</a>
+    <p>Welcome to the <%= title %></p>
+    <!-- WRAPPER -->
+    <div id="wrapper">
+        <!-- UNIQUE VISITORS -->
+        <h2>Unique Visitors</h2>
+        <div id="uniqVisList">
+            <table>
+                <thead>
+                    <th>Visitors</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <!-- /UNIQUE VISITORS-->
+    </div>
+    <!-- /WRAPPER -->
+    <!-- WRAPPER -->
+    <div id="wrapper">
+        <!-- REGION LIST -->
+        <h2>Region Data</h2>
+        <div id="regionList">
+            <table>
+                <thead>
+                    <th>Region</th>
+                    <th>Visitors</th>
+                    <th>Percent of total visitors</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <!-- /REGION LIST-->
+    </div>
+    <!-- /WRAPPER -->
+    <!-- WRAPPER -->
+    <div id="wrapper">
+        <!-- OPSYS LIST -->
+        <h2>Operating System Data</h2>
+        <div id="opsysList">
+            <table>
+                <thead>
+                    <th>Operating System</th>
+                    <th>Visitors</th>
+                    <th>Percent of total visitors</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <!-- /OPSYS LIST-->
+    </div>
+    <!-- /WRAPPER -->
   </body>
+  <script src="/javascripts/global.js" />
 </html>

@@ -12,9 +12,7 @@ router.get('/regionlist', function(req, res, next) {
   var db = req.db;
   var collection = db.get('regioncollection');
   collection.find({},{},function(e,docs) {
-    res.render('regionlist', {
-      "regionlist" : docs
-    });
+    res.json(docs);
   });
 });
 
@@ -23,9 +21,7 @@ router.get('/opsyslist', function(req, res, next) {
   var db = req.db;
   var collection = db.get('opsyscollection');
   collection.find({},{},function(e,docs) {
-    res.render('opsyslist', {
-      "opsyslist" : docs
-    });
+    res.json(docs);
   });
 });
 
@@ -34,9 +30,7 @@ router.get('/uniquevisitors', function(req, res) {
   var db = req.db;
   var collection = db.get('visitorscollection');
   collection.find({},{},function(e,docs) {
-    res.render('uniquevisitors', {
-      "uniquevisitors" : docs
-    });
+    res.json(docs);
   });
 });
 
