@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Operating System Data</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>OpSys list</h1>
+    <ul>
+        <%
+            var list = '';
+            for (i = 0; i < opsyslist.length; i++) {
+                list += '<li>' + opsyslist[i].Name + ": visitors: " + opsyslist[i].VisCount + " percent: " + opsyslist[i].VisPercent + '</li>'; 
+            }
+        %>
+        <%- list %>
+    </ul>
+  </body>
+</html>
